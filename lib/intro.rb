@@ -4,11 +4,11 @@ c = 0x1
 d = true
 
 puts a ==  b # true
-# puts a === b # doesnt exist
+puts a === b # true
 puts a ==  c # true
-# puts a === c # doesnt exist
+puts a === c # true
 puts a ==  d # false
-# puts a === d # doesnt exist
+puts a === d # false
 
 quotient = a / a # 1
 
