@@ -33,7 +33,7 @@ puts answer
 # indices that do not exist
 
 a = []
-puts a.class
+puts a.last.class
 
 # Nil comes to our 'rescue', while Elixir would throw an exception
 #
