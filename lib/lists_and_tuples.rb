@@ -29,3 +29,11 @@ puts answer
 
 # Ruby has no tuple type
 
+# However, another behavioural difference is accessing list
+# indices that do not exist
+
+a = []
+puts a.class
+
+# Nil comes to our 'rescue', while Elixir would throw an exception
+#
