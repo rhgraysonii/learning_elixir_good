@@ -1,5 +1,5 @@
 some_list = [1, 2, 3, true, false, 'cats', 2.0]
-IO.puts(length(some_list)) # 3
+IO.puts(length(some_list)) # 7
 
 # it appears the Elixir convention is to not parenthesize single arg functions
 # Concat is a slightly different, but understandable syntax
