@@ -40,5 +40,21 @@ IO.puts c
 
 # we raise an exception
 
-# we can also match empty lists using the head and tail pattern from earlier:
+# we cant match empty lists using the head and tail pattern from earlier:
 
+# [h|t] = []
+# raises MatchError
+
+# variables can be rebound
+
+x = 'cat'
+IO.puts x # cat
+x = 'dog'
+IO.puts x # dog
+
+# we can set arbitrary values we dont care about and just get one match like so
+[ h | _ ] = [1, 2, 3]
+IO.puts h
+# as we can see, we assign h and leave the rest.
+
+# _ # this can never be read from and will throw an exception
