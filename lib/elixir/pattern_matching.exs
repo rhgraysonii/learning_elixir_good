@@ -7,7 +7,6 @@ IO.puts x
 
 # However, rather than being simple assignment, `=` is actually the `match`
 # operator
-
 1 = x # 1
 
 # 1000 = x
@@ -58,3 +57,21 @@ IO.puts h
 # as we can see, we assign h and leave the rest.
 
 # _ # this can never be read from and will throw an exception
+
+# almost all types have a type check function
+
+# these are called guard functions
+
+# errors in these leak rather than fail
+
+# use cond if you wanna check multiple values and see if one evals to true
+cond do
+  3 + 5 == 0 ->
+    "this wont be true"
+  2 * 4 = 8 ->
+    "this will"
+  true ->
+    "and this too"
+end
+
+
